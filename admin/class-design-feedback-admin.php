@@ -35,7 +35,7 @@ class Design_Feedback_Admin {
 	/**
 	 * Register the stylesheets for the admin area.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1
 	 */
 	public function enqueue_styles() {
 
@@ -343,7 +343,7 @@ class Design_Feedback_Admin {
                             
                             
                         </script>
-                        <a href = "http://designfeedbackplugin.com/" target = "_blank">Design Feedback</a> | v0.1
+                        <a href = "http://designfeedbackplugin.com/" target = "_blank">Design Feedback</a> | v1.0
 EOD;
                         
          
