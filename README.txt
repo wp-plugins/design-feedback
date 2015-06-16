@@ -40,24 +40,30 @@ Thank you for installing and using the [Design Feedback plugin for WordPress](ht
 For other issues, questions, suggestions, feedback, please email us at [info@designfeedbackplugin.com](info@designfeedbackplugin.com).
 
 **How do I get started?**
+
 Once you've installed the plugin, sharing designs with clients is easy.  Go to Design Feedback in the sidebar, and click add new (`Design Feedback > Add New`).  Give your design a name (clients will see this) and add an image. You can optionally adjust the share URL to make it more client friendly.  Finally, click "save" and you're ready to share and receive feedback.
 
 **Do clients need to register an account?**
+
 No! Your clients need only open your URL in a browser to begin leaving feedback.  
 
 **What kind of images are supported?**
+
 Design Feedback works with most image types supported by WordPress, such as JPEG, GIF, PNG, and BMP. 
 
 **What kind of designs can I share?**
-We produced this plugin to help you share anything where you need someone else's opinion.  Designs like:
+
+We produced this plugin to help you share anything where you need someone else's opinion.  Use it to get feedback on designs like:
 
 * Logos
 * Site maps
 * Wireframes
 * Mockups
-* Stock Photography
+* Stock photography selections
+* Illustrations
 
 **How do I get more help?**
+
 If you encounter a technical issue, please use the [Support Forum](https://wordpress.org/support/plugin/design-feedback).  
 
 == Change Log ==
