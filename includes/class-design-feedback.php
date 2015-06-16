@@ -43,7 +43,7 @@ class Design_Feedback {
 	public function __construct() {
 
 		$this->plugin_name = 'design-feedback';
-		$this->version = '0.1';
+		$this->version = '1.0';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -196,7 +196,7 @@ class Design_Feedback {
 	/**
 	 * Run the loader to execute all of the hooks with WordPress.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1
 	 */
 	public function run() {
 		$this->loader->run();
