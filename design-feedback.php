@@ -16,7 +16,7 @@ ini_set("upload_max_filesize", "64M");
  * Plugin Name:       Design Feedback
  * Plugin URI:        http://designfeedbackplugin.com/#utm_source=wordpress&utm_medium=plugin&utm_campaign=wpdfplugin&utm_content=v01
  * Description:       An easy way to share any design with clients and colleagues for feedback and review.
- * Version:           0.1
+ * Version:           1.0
  * Author:            Design Feedback
  * Author URI:        http://designfeedbackplugin.com
  * License:           GPL-2.0+
@@ -64,7 +64,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-design-feedback.php';
  * then kicking off the plugin from this point in the file does
  * not affect the page life cycle.
  *
- * @since    1.0.0
+ * @since    0.1
  */
 function run_design_feedback() {
 
