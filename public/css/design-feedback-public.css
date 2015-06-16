@@ -1,0 +1,238 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+
+body.designfeedback{
+    background-color: #d9d9d9;
+}
+
+.designfeedback .clearfix{
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+.designfeedback .mockups_wrapper{
+    display: none;
+    margin: 0 auto;
+    position: relative;
+    max-width: 100%;
+    top: 0px;
+    text-align: center;
+}
+
+.designfeedback .mockups_wrapper img{
+    cursor: crosshair;
+    max-width: 100%;
+}
+
+.designfeedback .loading{
+    display: table;
+    background-color: #efefef;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    max-width: 500px;
+    padding: 2em 4em;
+    margin: 8em auto 0 auto;
+}
+
+.designfeedback .loading .text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.designfeedback .loading .bar{
+    margin: 2em 0em;
+}
+
+.designfeedback .loading .copyright{
+    font-size: .7em;
+    text-align: center;
+}
+
+.designfeedback .loaded{
+    display: none;
+    background-color: #efefef;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    max-width: 500px;
+    padding: 2em 4em;
+    margin: 8em auto 0 auto;
+}
+
+.designfeedback .loaded .text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.designfeedback .loaded .subtext{
+    text-align: center;
+    font-size: 1em;
+    padding: 2em 0;
+}
+
+.designfeedback .loaded .continue{
+    text-align: center;
+    padding: .5em 1em;
+    background-color: #41a62a;
+    display: table;
+    margin: 0 auto;
+    color: white;
+    border-radius: 7%;
+}
+
+.designfeedback .loaded .continue:hover{
+    cursor: pointer;
+    transition: ease-in-out 1s;
+    opacity: .7;
+}
+
+.designfeedback .leave_feedback{
+    background-color: white;
+    border: 1px solid #9f9f9f;
+    display: none;
+    position: absolute;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding: 1em;
+    border-radius: 5px;
+    max-width: 350px;
+    z-index: 200;
+    box-shadow: 2px 2px 2px -2px rgba(0,0,0,0.4);
+    transition: ease-in-out 1s;
+}
+
+.designfeedback .leave_feedback .text{
+    float: left;
+    font-weight: bold;
+}
+
+.designfeedback .leave_feedback .close{
+    float: right;
+}
+
+.designfeedback .leave_feedback .close:hover{
+    cursor: pointer;
+    color: red;
+    transition: ease-in-out .5s;
+}
+
+.designfeedback .leave_feedback .form{
+    padding: 2em 0em;
+    display: block;
+    float: left;
+}
+
+.designfeedback .leave_feedback .form {
+    padding: 1em 0em;
+    display: block;
+    float: left;
+}
+
+.designfeedback .leave_feedback .form input[type=text]{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px 7px;
+}
+
+.designfeedback .leave_feedback .form textarea{
+    width: 370px;
+    height: 160px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px 7px;
+    margin-top: 10px;
+}
+
+.designfeedback .leave_feedback .form #send_button{
+    width: 120px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #ffffff;
+    background: #FB4846;
+    padding: 7px 12px 7px 12px;
+    border: solid #D9272A 1px;
+    text-decoration: none;
+    margin-top: 10px;
+    float: left;
+}
+.designfeedback .leave_feedback .form #send_button:hover{
+    opacity: 0.7;
+    transition: ease-in-out .5s;
+    border-color: #FB4846;
+    background-color: #D9272A;
+    cursor: pointer;
+}
+
+.designfeedback .leave_feedback .form #cancel_button{
+    background-color: transparent;
+    border: 0px;
+    display: table;
+    color: #bbb;
+    float: left;
+    margin-top: 18px;
+    margin-left: 5px;
+}
+
+.designfeedback .leave_feedback .form #cancel_button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #555;
+    transition: ease-in-out .5s;
+}
+
+.designfeedback #temporary{
+    z-index: 500;
+}
+
+.designfeedback .dot{
+    background-color: #FB4846;
+    border-color: #D9272A;
+    border: 2px;
+    color: white;
+    vertical-align: middle;
+    z-index: 100;
+    height: 30px;
+    width: 39px;
+    display: table-cell;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 2px 2px 2px -2px rgba(0,0,0,0.4);
+    padding-top: 9px;
+}
+
+.designfeedback .dot:hover{
+    cursor:move;
+}
+
+.designfeedback .view_feedback{
+    display: table;
+    opacity: 0;
+    transition: ease-in-out 1s;
+    position: absolute;
+    background-color: white;
+    border: 1px #edeced solid;
+    border-radius: 5px;
+    padding: 1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    z-index: 300;
+    font-size: 12px;
+    width: 280px;
+    pointer-events: none;
+}
+
+.designfeedback .view_feedback .title{
+    font-weight: bold;
+}
+
+.designfeedback .view_feedback div{
+    float: left;
+    width: 100%;
+    clear: both;
+}
