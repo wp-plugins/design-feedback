@@ -1,0 +1,118 @@
+/**
+ * All of the CSS for admin-specific functionality should be
+ * included in this file.
+ */
+
+.meta_box_no_image{
+    border: .6em dashed #ddd;
+    width: 97%;
+    margin: 0 auto;
+    height: 20em;
+    background-color: #eee;
+    box-sizing:content-box;
+}
+
+.meta_box_no_image p{
+    display: table;
+    margin: 0 auto;
+    font-size: 2em;
+    color: #ccc;
+    font-weight: bold;
+    margin-top: 3em;
+}
+
+.meta_box_no_image #meta-image-button{
+    margin: 0 auto;
+    position: relative;
+    display: table;
+    margin-top: 7em;
+}
+
+.meta_box_image .image{
+    display: table;
+    float: left;
+}
+
+.meta_box_image .desc{
+    display: table;
+    float: left;
+    padding-left: 2em;
+}
+
+.meta_box_image .delete{
+    padding-top: 2em;
+}
+
+.meta_box_image .delete a{
+    color: red;
+    text-decoration: none;
+}
+
+.meta_box_image .delete a:hover{
+    opacity: 0.8;;
+}
+
+.clearfix{
+    display: block;
+    clear: both;
+}
+
+#shareURL{
+    width: 100%;
+}
+
+p.share{
+    font-weight: bold;
+    color: #565;
+    margin: 2px;
+}
+#done{
+    border: #005684 1px solid;
+    background-color: #00b9eb;
+    color: white;
+    float: right;
+    padding: 5px;
+    min-width: 10%;
+    height: 30px;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+#done:hover{
+    opacity: 0.7;
+    transition: ease-in-out .5s;
+}
+#designFeedback_result{
+    padding-top: .5em;
+}
+
+#minor-publishing-actions{
+    display: none;
+}
+
+#visibility{
+    display: none;
+}
+
+.misc-pub-section.misc-pub-post-status{
+    display: none;
+}
+
+.no_feedback{
+    color: #ccc;
+    font-size: 2em;
+    display: table;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.fixed #feedbacks.column-feedbacks{
+    width: 5%;
+}
+
+.widefat thead th.check-column.column-did{
+    width: 3em;
+}
