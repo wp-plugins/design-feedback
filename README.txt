@@ -74,7 +74,7 @@ If you encounter a technical issue, please use the [Support Forum](https://wordp
 = 1.0.1 =
 * Enhanced: Feedback dialog has cleaner styling
 * Fixed: Comment formatting now works with line breaks and most special characters
-* Fixed: Browser resizing disabled when uploaded images 
+* Fixed: Browser resizing disabled for uploaded images 
 
 = 1.0 =
 * New: Initial plugin release!
