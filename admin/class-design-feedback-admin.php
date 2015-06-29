@@ -238,7 +238,7 @@ class Design_Feedback_Admin {
                             <td><?php echo $feedback->name; ?></td>
                             <td>
                                 <p>Submitted: <b><?php echo date("M d, Y @ H:i", $feedback->time); ?></b></p>
-                                <p><?php echo stripcslashes($feedback->feedback); ?></p>
+                                <p><?php echo stripcslashes(nl2br($feedback->feedback)); ?></p>
                                 <div class="row-actions">
                                     <span class="trash"><a class="submitdelete" title="Delete this feedback" href="javascript: designFeedback_deleteFeedback('<?php echo $feedback->id; ?>');">Delete</a> </span>
                                 </div>

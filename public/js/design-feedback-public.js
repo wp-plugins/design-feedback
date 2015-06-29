@@ -40,8 +40,8 @@ function designFeedback_leaveFeedBackOpen( e, offset, viewing ){
 
 function designFeedback_leaveFeedBackPositioning(X, Y){
     
-    X = X + 10;
-    Y = Y + 10;
+    X = X + 32;
+    Y = Y - 15;
 
     $( ".designfeedback .leave_feedback" ).css( "left", X + "px" );
     $( ".designfeedback .leave_feedback" ).css( "top", Y + "px" );

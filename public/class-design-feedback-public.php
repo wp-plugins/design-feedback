@@ -151,10 +151,9 @@ class Design_Feedback_Public {
             
             ?>
                 <script>
-                    $(".leave_feedback #lvf_name").val("<?php echo $results[0]->name; ?>");
-                    $(".leave_feedback #lvf_feedback").val("<?php echo $results[0]->feedback; ?>");
-                    $(".leave_feedback #lvf_feedbackId").val("<?php echo $results[0]->id; ?>");
-
+                    $(".leave_feedback #lvf_name").val(<?php echo json_encode($results[0]->name); ?>);
+                    $(".leave_feedback #lvf_feedback").val(<?php echo json_encode(stripcslashes($results[0]->feedback)); ?>);
+                    $(".leave_feedback #lvf_feedbackId").val(<?php echo json_encode($results[0]->id); ?>);
                 </script>
             <?php
             

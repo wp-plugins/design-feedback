@@ -3,7 +3,6 @@
  * included in this file.
  */
 
-
 body.designfeedback{
     background-color: #d9d9d9;
 }
@@ -19,14 +18,14 @@ body.designfeedback{
     display: none;
     margin: 0 auto;
     position: relative;
-    max-width: 100%;
-    top: 0px;
+    top: -8px;
+    left: -8px;
     text-align: center;
 }
 
 .designfeedback .mockups_wrapper img{
     cursor: crosshair;
-    max-width: 100%;
+    
 }
 
 .designfeedback .loading{
@@ -102,21 +101,21 @@ body.designfeedback{
     max-width: 350px;
     z-index: 200;
     box-shadow: 2px 2px 2px -2px rgba(0,0,0,0.4);
-    transition: ease-in-out 1s;
 }
 
 .designfeedback .leave_feedback .text{
     float: left;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .designfeedback .leave_feedback .close{
     float: right;
+    font-weight: 500;
 }
 
 .designfeedback .leave_feedback .close:hover{
     cursor: pointer;
-    color: red;
+    color: #FB4846;
     transition: ease-in-out .5s;
 }
 
@@ -140,8 +139,8 @@ body.designfeedback{
 }
 
 .designfeedback .leave_feedback .form textarea{
-    width: 370px;
-    height: 160px;
+    width: 320px;
+    height: 130px;
     border-radius: 5px;
     border: 1px solid #ccc;
     padding: 5px 7px;
@@ -191,20 +190,21 @@ body.designfeedback{
 }
 
 .designfeedback .dot{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #FB4846;
     border-color: #D9272A;
     border: 2px;
     color: white;
     vertical-align: middle;
     z-index: 100;
-    height: 30px;
+    height: 39px;
     width: 39px;
+    line-height: 39px;
     display: table-cell;
     text-align: center;
     border-radius: 50%;
     position: absolute;
     box-shadow: 2px 2px 2px -2px rgba(0,0,0,0.4);
-    padding-top: 9px;
 }
 
 .designfeedback .dot:hover{

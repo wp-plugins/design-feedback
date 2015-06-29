@@ -1,9 +1,9 @@
 === Design Feedback ===
 Contributors: designfeedback
-Tags: design, feedback, mockup, client, wireframe, design review, comment, webdesign, freelancer, freelancers, graphic artists, graphic designers, graphics, image, images, logo design,
+Tags: design, feedback, mockup, client, wireframe, design review, comment, webdesign, freelancer, freelancers, graphic artists, graphic designers, graphics, image, images, logo design, mood boards, infographics
 Requires at least: 4.0
 Tested up to: 4.2
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 
 An easy way to share designs with clients and colleagues for feedback and review.
@@ -18,7 +18,7 @@ An easy way to share designs with clients and colleagues for feedback and review
 
 * **Happy Clients** - Delight your clients with easy to open designs and a simple feedback process.  No more missing files, back and forth emails, miscommunication or lost feedback.
  
-#### Follow Design Feedack 
+#### Follow Design Feedback 
 [Blog](http://designfeedbackplugin.com/blog/) | [Twitter](http://twitter.com/wpDFP) 
 
 == Installation ==
@@ -61,13 +61,27 @@ We produced this plugin to help you share anything where you need someone else's
 * Mockups
 * Stock photography selections
 * Illustrations
+* Mood boards
+* Infographics
 
 **How do I get more help?**
 
 If you encounter a technical issue, please use the [Support Forum](https://wordpress.org/support/plugin/design-feedback).  
 
+
 == Change Log ==
+
+= 1.0.1 =
+* Enhanced: Feedback dialog has cleaner styling
+* Fixed: Comment formatting now works with line breaks and most special characters
+* Fixed: Browser resizing disabled when uploaded images 
+
 = 1.0 =
 * New: Initial plugin release!
 * New: Upload and share designs with anyone (like your clients)
 * New: Clients leave feedback directly on your designs so you know exactly what they're talking about
+
+== Upgrade Notice == 
+
+= 1.0.1 =
+Cleaner feedback dialog styling and fixed minor image display and line break bugs.
