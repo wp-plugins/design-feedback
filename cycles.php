@@ -8,20 +8,20 @@ ini_set("upload_max_filesize", "64M");
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://designfeedbackplugin.com
- * @since             0.1
+ * @link              http://getCycles.io
+ * @since             1.0.2
  * @package           Design_Feedback
  *
  * @wordpress-plugin
- * Plugin Name:       Design Feedback
- * Plugin URI:        http://designfeedbackplugin.com/#utm_source=wordpress&utm_medium=plugin&utm_campaign=wpdfplugin&utm_content=v01
+ * Plugin Name:       Cycles
+ * Plugin URI:        http://getCycles.io/#utm_source=wordpress&utm_medium=plugin&utm_campaign=wpdfplugin&utm_content=v01
  * Description:       An easy way to share any design with clients and colleagues for feedback and review.
- * Version:           1.0.1
- * Author:            Design Feedback
- * Author URI:        http://designfeedbackplugin.com
+ * Version:           1.0.2
+ * Author:            Cycles
+ * Author URI:        http://getCycles.io
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       design-feedback
+ * Text Domain:       cycles
  * Domain Path:       /languages
  */
 
