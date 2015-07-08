@@ -6,7 +6,7 @@
  * A class definition that includes attributes and functions used across both the
  * public-facing side of the site and the admin area.
  *
- * @link       http://designfeedbackplugin.com
+ * @link       http://getCycles.io
  * @since      0.1
  *
  * @package    Design_Feedback
@@ -42,8 +42,8 @@ class Design_Feedback {
 	 */
 	public function __construct() {
 
-		$this->plugin_name = 'design-feedback';
-		$this->version = '1.0';
+		$this->plugin_name = 'designfeedback';
+		$this->version = '1.0.2';
 
 		$this->load_dependencies();
 		$this->set_locale();

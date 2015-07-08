@@ -1,16 +1,16 @@
-=== Design Feedback ===
-Contributors: designfeedback
-Tags: design, feedback, mockup, client, wireframe, design review, comment, webdesign, freelancer, freelancers, graphic artists, graphic designers, graphics, image, images, logo design, mood boards, infographics
+=== Cycles ===
+Contributors: Cycles
+Tags: design, feedback, mockup, client, wireframe, design review, comment, webdesign, freelancer, freelancers, graphic artists, graphic designers, graphics, image, images, logo design, mood boards, infographics, design feedback, cycles
 Requires at least: 4.0
 Tested up to: 4.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 
 An easy way to share designs with clients and colleagues for feedback and review.
 
 == Description ==
 
-[Design Feedback](http://designfeedbackplugin.com/) allows you to easily share any design (mockups, wireframes, sitemaps) without the complexity of email attachments or third-party services.  Clients and colleagues view your work in their browser and post feedback directly on your designs. 
+[Cycles](http://getCycles.io/) allows you to easily share any design (mockups, wireframes, sitemaps) without the complexity of email attachments or third-party services.  Clients and colleagues view your work in their browser and post feedback directly on your designs.  
 
 * **Simple Sharing** - Send links (not attachments) to any design you can think of. Share logos, sitemaps, wireframes, mockups, stock photography, and more.
 
@@ -18,14 +18,14 @@ An easy way to share designs with clients and colleagues for feedback and review
 
 * **Happy Clients** - Delight your clients with easy to open designs and a simple feedback process.  No more missing files, back and forth emails, miscommunication or lost feedback.
  
-#### Follow Design Feedback 
-[Blog](http://designfeedbackplugin.com/blog/) | [Twitter](http://twitter.com/wpDFP) 
+#### Follow Cycles
+[Blog](http://getCycles.io/blog/) | [Twitter](http://twitter.com/getCycles) 
 
 == Installation ==
 
-1. Upload the entire `design-feedback` folder to the `/wp-content/plugins/` directory
+1. Upload the entire `cycles` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the `Plugins` menu in WordPress
-3. Done! Use the Design Feedback option in the admin side bar to upload and share your designs.
+3. Done! Use the Cycles menu option in the admin sidebar to upload and share your designs.
 
 == Screenshots ==
 
@@ -35,13 +35,13 @@ An easy way to share designs with clients and colleagues for feedback and review
 
 == Frequently Asked Questions ==
 
-Thank you for installing and using the [Design Feedback plugin for WordPress](http://designfeedbackplugin.com).  If you're having trouble and can't find a solution below, please create a support topic (link below).  We closely monitor and will respond as soon as possible.  
+Thank you for installing and using the [Cycles plugin for WordPress](http://getCycles.io).  If you're having trouble and can't find a solution below, please create a support topic (link below).  We closely monitor and will respond as soon as possible.  
 
-For other issues, questions, suggestions, feedback, please email us at [info@designfeedbackplugin.com](info@designfeedbackplugin.com).
+For other issues, questions, suggestions, feedback, please email us at [info@getCycles.io](info@getCycles.io).
 
 **How do I get started?**
 
-Once you've installed the plugin, sharing designs with clients is easy.  Go to Design Feedback in the sidebar, and click add new (`Design Feedback > Add New`).  Give your design a name (clients will see this) and add an image. You can optionally adjust the share URL to make it more client friendly.  Finally, click "save" and you're ready to share and receive feedback.
+Once you've installed the plugin, sharing designs with clients is easy.  Go to 'Cycles' in the sidebar, and click add new (`Cycles > Add New`).  Give your design a name (clients will see this) and add an image. You can optionally adjust the share URL to make it more client friendly.  Finally, click "save" and you're ready to share and receive feedback.
 
 **Do clients need to register an account?**
 
@@ -49,7 +49,7 @@ No! Your clients need only open your URL in a browser to begin leaving feedback.
 
 **What kind of images are supported?**
 
-Design Feedback works with most image types supported by WordPress, such as JPEG, GIF, PNG, and BMP. 
+Cycles works with most image types supported by WordPress, such as JPEG, GIF, PNG, and BMP. 
 
 **What kind of designs can I share?**
 
@@ -71,6 +71,9 @@ If you encounter a technical issue, please use the [Support Forum](https://wordp
 
 == Change Log ==
 
+= 1.0.2 = 
+* New Name: Design Feedback is now called Cycles.
+
 = 1.0.1 =
 * Enhanced: Feedback dialog has cleaner styling
 * Fixed: Comment formatting now works with line breaks and most special characters
@@ -83,5 +86,5 @@ If you encounter a technical issue, please use the [Support Forum](https://wordp
 
 == Upgrade Notice == 
 
-= 1.0.1 =
-Cleaner feedback dialog styling and fixed minor image display and line break bugs.
+= 1.0.2 =
+New name - Design Feedback is now called Cycles.

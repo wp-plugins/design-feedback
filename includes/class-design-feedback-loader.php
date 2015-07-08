@@ -3,7 +3,7 @@
 /**
  * Register all actions and filters for the plugin
  *
- * @link       http://designfeedbackplugin.com
+ * @link       http://getCycles.io
  * @since      0.1
  *
  * @package    Design_Feedback

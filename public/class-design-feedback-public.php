@@ -3,12 +3,12 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * @link       http://designfeedbackplugin.com
+ * @link       http://getCycles.io
  * @since      0.1
  *
  * @package    Design_Feedback
  * @subpackage Design_Feedbacke/admin
- * @author     Design Feedback
+ * @author     Cycles
  */
 
 class Design_Feedback_Public {

@@ -3,7 +3,7 @@
 /**
  * The admin-specific functionality of the plugin.
  *
- * @link       http://designfeedbackplugin.com
+ * @link       http://getCycles.io
  * @since      0.1
  *
  * @package    Design Feedback
@@ -83,10 +83,10 @@ class Design_Feedback_Admin {
             register_post_type( 'designfeedback',
             array(
                 'labels' => array(
-                            'name'          => __( 'Design Feedback' ),
+                            'name'          => __( 'Cycles' ),
                             'singular_name' => __( 'design' ),
-                            'menu_name'     => __( 'Design Feedback' ),
-                            'name_admin_bar'=> __( 'Design Feedback' ),
+                            'menu_name'     => __( 'Cycles' ),
+                            'name_admin_bar'=> __( 'Cycles' ),
                             'all_items'     => __( 'All Designs' ),
                             'new_item'      => __( 'Add New Design' ),
                             'add_new'       => __( 'Add New' ),
@@ -343,7 +343,6 @@ class Design_Feedback_Admin {
                             
                             
                         </script>
-                        <a href = "http://designfeedbackplugin.com/" target = "_blank">Design Feedback</a> | v1.0
 EOD;
                         
          

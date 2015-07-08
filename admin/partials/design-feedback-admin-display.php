@@ -5,7 +5,7 @@
  *
  * This file is used to markup the admin-facing aspects of the plugin.
  *
- * @link       http://designfeedbackplugin.com
+ * @link       http://getCycles.io
  * @since      0.1
  *
  * @package    Design_Feedback
