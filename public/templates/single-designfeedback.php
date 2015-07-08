@@ -34,7 +34,7 @@ $image = wp_get_attachment_image( $meta[0], "full" );
                 }
                 changeLoadingStatus();
             </script>
-            <div class = "copyright">Powered by <b>Design Feedback</b>, the best way to share designs and collect feedback with WordPress</div>
+            <div class = "copyright">Powered by <b>Cycles</b>, the best way to share designs and collect feedback with WordPress</div>
         </div>
         
         <div class ="loaded">
