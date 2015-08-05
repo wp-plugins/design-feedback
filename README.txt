@@ -2,17 +2,19 @@
 Contributors: Cycles
 Tags: design, feedback, mockup, client, wireframe, design review, comment, webdesign, freelancer, freelancers, graphic artists, graphic designers, graphics, image, images, logo design, mood boards, infographics, design feedback, cycles
 Requires at least: 4.0
-Tested up to: 4.2
-Stable tag: 1.0.2
+Tested up to: 4.2.4
+Stable tag: 1.1
 License: GPLv2 or later
 
 An easy way to share designs with clients and colleagues for feedback and review.
 
 == Description ==
 
+**New Feature in v1.1** Now you can **password protect** your designs for client privacy. 
+
 [Cycles](http://getCycles.io/) allows you to easily share any design (mockups, wireframes, sitemaps) without the complexity of email attachments or third-party services.  Clients and colleagues view your work in their browser and post feedback directly on your designs.  
 
-* **Simple Sharing** - Send links (not attachments) to any design you can think of. Share logos, sitemaps, wireframes, mockups, stock photography, and more.
+* **Simple, Secure Sharing** - Send links (not attachments) to any design you can think of. Share logos, sitemaps, wireframes, mockups, stock photography, and more.  Password protect your designs to protect client privacy.
 
 * **Better Feedback** - Since clients view designs in their browser, they can leave feedback directly on the designs as if they were completely developed.
 
@@ -32,6 +34,7 @@ An easy way to share designs with clients and colleagues for feedback and review
 1. Clients leave feedback directly on the design
 2. Fast & easy sharing, just upload a file and you're ready to share with clients
 3. View feedback directly on the design or in bulk
+4. Password protect your designs to protect client privacy
 
 == Frequently Asked Questions ==
 
@@ -70,6 +73,12 @@ If you encounter a technical issue, please use the [Support Forum](https://wordp
 
 
 == Change Log ==
+= 1.1 =
+* New: Privacy and password protection options
+* Enhanced: Changed URL prefix from 'design-feedback' to 'cycles.'
+* Enhanced: Better styling on share dialog
+* Enhanced: Removed unnecessary code and files
+* Enhanced: Limit other plugin metaboxes from Add/Edit design screen 
 
 = 1.0.2 = 
 * New Name: Design Feedback is now called Cycles.
@@ -86,5 +95,5 @@ If you encounter a technical issue, please use the [Support Forum](https://wordp
 
 == Upgrade Notice == 
 
-= 1.0.2 =
-New name - Design Feedback is now called Cycles.
+= 1.1 =
+New feature - Password protected designs!

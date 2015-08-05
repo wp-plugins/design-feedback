@@ -132,7 +132,10 @@ class Design_Feedback {
                 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-                
+		$this->loader->add_action( 'admin_head-post.php', $plugin_admin, 'hide_post_status_option' );
+		$this->loader->add_action( 'admin_head-post-new.php', $plugin_admin, 'hide_post_status_option' );
+		$this->loader->add_action( 'add_meta_boxes', $plugin_admin, 'lock_meta_boxes', 999, 2 );
+
                 /*
                  * Post Types and its addons 
                  */ 
@@ -226,5 +229,4 @@ class Design_Feedback {
 	public function get_version() {
 		return $this->version;
 	}
-
 }

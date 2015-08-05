@@ -52,8 +52,8 @@ body.designfeedback{
     text-align: center;
 }
 
-.designfeedback .loaded{
-    display: none;
+.designfeedback .loaded,
+.designfeedback .post_password_required {
     background-color: #efefef;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     max-width: 500px;
@@ -61,26 +61,43 @@ body.designfeedback{
     margin: 8em auto 0 auto;
 }
 
-.designfeedback .loaded .text{
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.8em;
+.designfeedback .loaded{
+    display: none;
 }
 
-.designfeedback .loaded .subtext{
+.designfeedback .loaded .text,
+.designfeedback .post_password_required .text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.6em;
+}
+
+.designfeedback .loaded .subtext,
+.designfeedback .post_password_required .subtext {
     text-align: center;
     font-size: 1em;
     padding: 2em 0;
 }
 
-.designfeedback .loaded .continue{
+.designfeedback .post_password_required .subtext input[type=password] {
+    border: solid 1px black;
+    padding: .5em .25em;
+    margin: 0 .5em;
+    font-size: 1.2em;
+}
+
+.designfeedback .loaded .continue,
+.designfeedback .post_password_required .continue {
     text-align: center;
     padding: .5em 1em;
     background-color: #41a62a;
+    border: none;
+    cursor: pointer;
     display: table;
     margin: 0 auto;
     color: white;
     border-radius: 7%;
+    font-size: 1em;
 }
 
 .designfeedback .loaded .continue:hover{

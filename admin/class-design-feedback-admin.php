@@ -74,7 +74,6 @@ class Design_Feedback_Admin {
                 wp_enqueue_script( $this->plugin_name . "image-upload", plugin_dir_url( __FILE__ ) . 'js/meta-box-image-upload.js', array( 'jquery' ), $this->version, false );
                 wp_enqueue_script( $this->plugin_name . "admin", plugin_dir_url( __FILE__ ) . 'js/design-feedback-admin.js', array( 'jquery' ), $this->version, false );
                 wp_enqueue_script('jquery-ui-dialog');
-                wp_enqueue_script( $this->plugin_name . "zero", plugin_dir_url( __FILE__ ) . 'js/zeroclipboard-2.2.0/dist/ZeroClipboard.js', array( 'jquery' ), $this->version, false );
 
 
 	}
@@ -95,6 +94,7 @@ class Design_Feedback_Admin {
                             'view_item'     => __( 'View Design' ),
                             'search_items'  => __( 'Search Designs' )
                             ),
+                'rewrite'            => array( 'slug' => 'cycles' ),
                 'public'             => true,
                 'has_archive'        => false,
                 'menu_icon'          => 'dashicons-feedback'
@@ -112,12 +112,26 @@ class Design_Feedback_Admin {
         public function define_row_actions($actions, $post){
             
             if ( $post->post_type == "designfeedback"){
+
                 unset($actions["inline hide-if-no-js"]);
-                $actions["share"] = '<a href = "javascript: designFeedback_openShareWindow(\'' . get_permalink($post->ID) . '\')">Share</a>';
+
+                add_thickbox();
+
+                ob_start();
+                ?>
+                    <a href="#TB_inline?width=600&amp;height=120&amp;inlineId=cycles-share-<?php echo $post->ID; ?>" class="thickbox" title="Share this design for feedback">Share</a>
+
+                    <div id="cycles-share-<?php echo $post->ID; ?>" style="display:none;" class="cycles-share">
+                        <p>
+                            Copy and share the URL below:<br />
+                            <input type="text" class="large-text" value="<?php echo get_permalink( $post ); ?>" readonly>
+                        </p>
+                    </div>                    
+                <?php
+                $actions["share"] = ob_get_clean();
             }
             
             return $actions;
-            
         }
         
         public function define_meta_boxes(){
@@ -293,63 +307,35 @@ class Design_Feedback_Admin {
         public function define_footer($text) {
             
             // There's a few other things in here besides the footer, such as the dialog for the url sharing
-            
             $post_type = filter_input( INPUT_GET, 'post_type' );
             if ( !$post_type )
                 $post_type = get_post_type( filter_input( INPUT_GET, 'post' ) );
 
             if ( 'designfeedback' == $post_type ){
                 
-                if ( isset( $_GET["post_type"] ) ){
-                    
-                    if ($_GET["post_type"] == "designfeedback"){
-                        echo '<script>jQuery("#misc-publishing-actions").hide();</script>';
-                    }
-                    
-                }
-                
-                $text = "";
-                $text = <<<EOD
-                        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+                $text = '';
+                ob_start();
+                ?>
+                    <script>
+                        jQuery( document ).ready( function( $ ) {
 
-                        <div id="designFeedback_share" title="Share this design for feedback">
-                            <form>
-                                <fieldset>
-                                    <p class= "share">Copy and share the URL below</p>
-                                    <input type="text" name="shareURL" id="shareURL" disabled = "disabled" value="" class="text ui-widget-content ui-corner-all">                                    <input type = "button" value = "Done" id = "done" onClick = "jQuery( '#designFeedback_share' ).dialog( 'close' );"/>
-                                </fieldset>
-                            </form>
-                         </div>
-                        
-                         <script>
-                            var modal;
-                            jQuery( document ).ready(function() {
-                                modal = jQuery( "#designFeedback_share" ).dialog({
-                                  autoOpen: false,
-                                  height: 160,
-                                  width: 450,
-                                  modal: true,
-                                  
-                                  close: function() {
+                            $('.cycles-share input').mouseover( function () {
+                                $( this ).select();
+                            } );
 
-                                  }
-                                });
-                        
-                                jQuery( "#publish" ).val("Save");
-                                jQuery( "#submitdiv h3.hndle" ).html("<span>Save</span>");
-                                jQuery( "#shortlink" ).next().css( "display", "none" );
-
-                            });
-                            
-                            
-                        </script>
-EOD;
-                        
-         
+                            if ( $( '.add-new-h2' ).length ) {
+                                $( '#publish' ).val( 'Update' );
+                            } else {
+                                $( '#publish' ).val( 'Save' );
+                            }
+                            $( '#submitdiv h3.hndle span' ).html( 'Save' );
+                            $( '#shortlink' ).next().css( 'display', 'none' );
+                        } );
+                    </script>
+                <?php
+                $text .= ob_get_clean();
             }
-            
             return $text;
-            
         }
         
         public function ajax_delete_feedback() {
@@ -361,4 +347,59 @@ EOD;
             
         }
         
+    function hide_post_status_option() {
+
+        global $post;
+
+        $cpt = 'designfeedback';
+
+        if ( $cpt === $post->post_type ) {
+            echo '<style type="text/css">.misc-pub-section.misc-pub-post-status{ display: none }</style>';
+        }
+    }
+
+    /**
+     * Locks metaboxes
+     *
+     * Removes metaboxes injected by the theme or by plugins
+     */
+    public function lock_meta_boxes( $post_type, $post ){
+
+        if ( 'designfeedback' !== $post_type ) {
+            return;
+        }
+
+        global $wp_meta_boxes;
+
+        // Metaboxes to show
+        $allowed_meta_boxes = array(
+            'submitdiv',
+            'slugdiv',
+            'design-feedback-meta-image',
+            'design-feedback-meta-feedback',
+        );
+
+        // Loop through each page key of the '$wp_meta_boxes' global
+        if ( ! empty( $wp_meta_boxes ) ) : foreach ( $wp_meta_boxes as $page => $page_boxes ) :
+
+            // Loop through each contect
+            if ( ! empty( $page_boxes ) ) : foreach ( $page_boxes as $context => $box_context ) :
+
+                // Loop through each type of meta box
+                if ( ! empty( $box_context ) ) : foreach ( $box_context as $box_type ) :
+
+                    // Loop through each individual box
+                    if ( ! empty( $box_type ) ) : foreach ( $box_type as $id => $box ) :
+
+                        // Check to see if the meta box should be removed
+                        if( ! in_array($id, $allowed_meta_boxes ) ) :
+
+                            // Remove the meta box
+                            remove_meta_box( $id, $page, $context );
+                        endif;
+                    endforeach; endif;
+                endforeach; endif;
+            endforeach; endif;
+        endforeach; endif;
+    }
 }

@@ -16,7 +16,7 @@ ini_set("upload_max_filesize", "64M");
  * Plugin Name:       Cycles
  * Plugin URI:        http://getCycles.io/#utm_source=wordpress&utm_medium=plugin&utm_campaign=wpdfplugin&utm_content=v01
  * Description:       An easy way to share any design with clients and colleagues for feedback and review.
- * Version:           1.0.2
+ * Version:           1.1
  * Author:            Cycles
  * Author URI:        http://getCycles.io
  * License:           GPL-2.0+

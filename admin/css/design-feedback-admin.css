@@ -89,18 +89,6 @@ p.share{
     padding-top: .5em;
 }
 
-#minor-publishing-actions{
-    display: none;
-}
-
-#visibility{
-    display: none;
-}
-
-.misc-pub-section.misc-pub-post-status{
-    display: none;
-}
-
 .no_feedback{
     color: #ccc;
     font-size: 2em;
